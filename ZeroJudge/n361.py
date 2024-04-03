@@ -9,8 +9,6 @@ for i in customer:
     second = int(str(i)[-1]) % 2 == 1 and i % 3 != 0
     third = (pow(int(sqrt(i)), 2) == i) or (i % 7 != 0 and i % 2 == 0)
 
-    # print(first ,second, third)
-
     if (first and second) or (second and third) or (first and third):
         if first:
             print("1", end= " ")
